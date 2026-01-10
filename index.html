@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="section-b.css">
+    <link rel="stylesheet" href="section-c.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fleur+De+Leah&family=Goldman:wght@400;700&family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Cut&family=Playwrite+AU+QLD:wght@100..400&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+   
+    <main>
+
+        <!-- search cities -->
+        <div class="search-bar">
+            <input type="text" id="search-inp" placeholder="Search City">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon" onclick="btnprocess()"></i>
+        </div>
+
+        <!-- last update
+        <div class="last-upd">
+            <p></p>
+        </div> -->
+
+        <!-- Section-a  -->
+        <div class="section-a">
+            <!-- section-a divided into two parts in div(a1 & a2) -->
+            <div class="div-a1">
+                <!-- div-a1 divided into two parts in a1-area(1 & 2) -->
+                <div class="a1-area1">
+                    <!-- a1-area1 divided into two parts in area-1(a & b) -->
+                    <div class="area-1a">
+                        <!-- area-1a divided into two parts in date-c... & temp-cloud -->
+                        <div class="date-container">
+                            <p class="day-container">Monday</p>
+                            <p class="month-date-container">April 13</p>
+                        </div>
+                        <div class="temp-cloud">
+                            <div class="temp-container">
+                                <p class="temp">18*C</p>
+                                <p class="cloud-type">Partly Cloud</p>
+                            </div>
+                            <div class="cloud-container">
+                                <img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="area-1b">
+                        <!-- area-1b divided into two parts  -->
+                        <div class="wind-humi">
+                            <div class="keys">
+                                <p class="uv whp">UV Index</p>
+                                <p class="wind">Wind</p>
+                                <p class="wind-dir">Wind Dir</p>
+                                <p class="humidity">Humidity</p>
+                                <p class="visibility">Visibility</p>
+                            </div>
+                            <div class="values">
+                                <p class="uv-value"></p>
+                                <p class="wind-value"></p>
+                                <p class="wind-dir-value"></p>
+                                <p class="humidity-value"></p>
+                                <p class="visibility-value"></p>
+                            </div>
+                        </div>
+                        <div class="sun-set-rise">
+                            <div class="sun-rise">
+                                <p class="sun-rise-time"></p>
+                                <img src="./img/sunrise.png" alt="sunrise_img">
+                            </div>
+                            <div class="sun-set">
+                                <p class="sun-set-time"></p>
+                                <img src="./img/sunset.png" alt="sunset_img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="a1-area2">
+                    <div class="diva a2divimg">
+                        <p class="h1"></p>
+                        <img src="" alt="">
+                        <p class="t1"></p>
+                    </div>
+                    <div class="divb a2divimg">
+                        <p class="h2"></p>
+                        <img src="" alt="">
+                        <p class="t2"></p>
+                    </div>
+                    <div class="divc a2divimg">
+                        <p class="h3"></p>
+                        <img src="" alt="">
+                        <p class="t3"></p>
+                    </div>
+                    <div class="divd a2divimg">
+                        <p class="h4"></p>
+                        <img src="" alt="">
+                        <p class="t4"></p>
+                    </div>
+                    <div class="dive a2divimg">
+                        <p class="h5"></p>
+                        <img src="" alt="">
+                        <p class="t5"></p>
+                    </div>
+                    <div class="divf a2divimg">
+                        <p class="h6"></p>
+                        <img src="" alt="">
+                        <p class="t6"></p>
+                    </div>
+                    <div class="divg a2divimg">
+                        <p class="h7"></p>
+                        <img src="" alt="">
+                        <p class="t7"></p>
+                    </div>
+                    <div class="divh a2divimg">
+                        <p class="h8"></p>
+                        <img src="" alt="">
+                        <p class="t8"></p>
+                    </div>
+                    <div class="divi a2divimg">
+                        <p class="h9"></p>
+                        <img src="" alt="">
+                        <p class="t9"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-a2">
+                <div class="searched-loc">
+                    <p class="loc-name">LOcation</p>
+                </div>
+                <div class="loc-info">
+                    <div class="loc-info-title">
+                        <p class="country">Country Name :</p>
+                        <p class="region">Region :</p>
+                        <p class="lon">Longitude :</p>
+                        <p class="lat">Latitude :</p>
+                        <p class="loc-dat">Local Date :</p>
+                        <p class="loc-tim">Local Time :</p>
+                    </div>
+                    <div class="loc-info-data">
+                        <p class="country-name"></p>
+                        <p class="region-name"></p>
+                        <p class="longitude"></p>
+                        <p class="latitude"></p>
+                        <p class="loc-date"></p>
+                        <p class="loc-time"></p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section-b  -->
+        <div class="section-b">
+            <div class="morning common-styling">
+                <div class="s-b-title-cont">
+                    <p>Morning</p>
+                </div>
+                <div class="morn-temp">
+                    <div class="m-cloud">
+                        <img>
+                    </div>
+                    <div class="m-temp">
+                        <p class="m-t-1">18*C</p>
+                        <p class="m-t-2">Prety Cloud</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="afternoon common-styling">
+                <div class="s-b-title-cont">
+                    <p>Afternoon</p>
+                </div>
+                <div class="after-temp">
+                    <div class="a-cloud">
+                        <img>
+                    </div>
+                    <div class="a-temp">
+                        <p class="a-t-1">20*C</p>
+                        <p class="a-t-2">Misty</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evening common-styling">
+                <div class="s-b-title-cont">
+                    <p>Evening</p>
+                </div>
+                <div class="even-temp">
+                    <div class="e-cloud">
+                        <img>
+                    </div>
+                    <div class="e-temp">
+                        <p class="e-t-1">15*C</p>
+                        <p class="e-t-2">Sunny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- last update -->
+        <div class="last-upd">
+            <p></p>
+        </div>
+
+
+    </main>
+
+
+<!-- scripting added -->
+ <script src="index.js"></script>
+ <script src="default.js"></script>
+</body>
+</html>

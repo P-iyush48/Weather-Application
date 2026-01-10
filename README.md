@@ -1,5 +1,5 @@
 # Weather-Application
 Here you can search any country Weather information. 
-What is the current temperature of that country.
+See what is the current temperature that country or a city.
 
 Api used -> WeatherApi
